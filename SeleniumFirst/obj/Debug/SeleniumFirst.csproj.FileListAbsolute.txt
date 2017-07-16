@@ -11,3 +11,6 @@ C:\Users\Bipin\Documents\Visual Studio 2015\Projects\SeleniumFirst\SeleniumFirst
 C:\Users\Bipin\Documents\Visual Studio 2015\Projects\SeleniumFirst\SeleniumFirst\obj\Debug\SeleniumFirst.pdb
 C:\Users\Bipin\Documents\Visual Studio 2015\Projects\SeleniumFirst\SeleniumFirst\bin\Debug\WebDriver.Support.dll
 C:\Users\Bipin\Documents\Visual Studio 2015\Projects\SeleniumFirst\SeleniumFirst\bin\Debug\WebDriver.Support.xml
+C:\Users\Bipin\Documents\Visual Studio 2015\Projects\SeleniumFirst\SeleniumFirst\bin\Debug\Excel.dll
+C:\Users\Bipin\Documents\Visual Studio 2015\Projects\SeleniumFirst\SeleniumFirst\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Bipin\Documents\Visual Studio 2015\Projects\SeleniumFirst\SeleniumFirst\bin\Debug\Excel.pdb

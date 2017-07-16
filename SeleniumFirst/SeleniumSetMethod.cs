@@ -8,21 +8,36 @@ using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumFirst
 {
-    class SeleniumSetMethod
+    public static class SeleniumSetMethod
     {
-        //enter text
-        public static void EnterText(IWebElement element, string value)
+        /// <summary>
+        /// Extended method for entering text in control.
+        /// </summary>
+        /// <param name="element"></param>
+        /// <param name="value"></param>
+        public static void EnterText(this IWebElement element, string value)
         {
             element.SendKeys(value);
 
         }
-        //click in a button,option ,chechkbox
-        public static void Click(IWebElement element)
+
+
+
+        /// <summary>
+        ///click in a button,option ,chechkbox 
+        /// </summary>
+        /// <param name="element"></param>
+        public static void Clicks(this IWebElement element)
         {
             element.Click();
         }
-        //selecting dropdown control
-        public static void SelectDropdown(IWebElement element, string value)
+
+        /// <summary>
+        ///selecting dropdown control 
+        /// </summary>
+        /// <param name="element"></param>
+        /// <param name="value"></param>
+        public static void SelectDropdown(this IWebElement element, string value)
         {
 
 

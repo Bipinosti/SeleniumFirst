@@ -27,13 +27,22 @@ namespace SeleniumFirst
         [Test]
         public void ExecuteTest()
         {
-            //Login
+            ExcelLib.PopulateInCollection(@"E:\Data.xlsx");
+
             LoginPageObject pageLogin = new LoginPageObject();
-            EAPageObject pageEA = pageLogin.Login("Bipin","Osti");
-            pageEA.FillUserForm("Hello", "Bipin", "Osti");
-            
-            
-          
+            EAPageObject pageEA = pageLogin.Login(ExcelLib.ReadData(1, "UserName"), ExcelLib.ReadData(1, "Password"));
+            pageEA.FillUserForm(ExcelLib.ReadData(1, "Initial"), ExcelLib.ReadData(1, "MiddleName"), ExcelLib.ReadData(1, "FirstName"));
+
+
+
+
+            ////Login
+            //LoginPageObject pageLogin = new LoginPageObject();
+            //EAPageObject pageEA = pageLogin.Login("Bipin", "Osti");
+            //pageEA.FillUserForm("Hello", "Bipin", "Osti");
+
+
+
 
             ////dropdown
             //SeleniumSetMethod.SelectDropdown("TitleId", "Mr.", PropertyType.Id);
@@ -47,7 +56,7 @@ namespace SeleniumFirst
             //SeleniumSetMethod.Click("Save", PropertyType.Name);
             //SeleniumSetMethod.Click("Hindi", PropertyType.Name);
         }
-      /* [TearDown]*/
+        /* [TearDown]*/
         public void Cleanup()
         {
             PropertiesCollection.driver.Close();
